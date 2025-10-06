@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@theme{
+    --font-body:"Nunito", sans-serif;
+    --color-brown-100: #f5e6d3;
+  --color-brown-200: #ecd2b3;
+  --color-brown-300: #e2b890;
+  --color-brown-400: #d69f6c;
+  --color-brown-500: #c8874a;
+  --color-brown-600: #a86b34;
+  --color-brown-700: #854f22;
+  --color-brown-800: #5c3414;
+  --color-brown-900: #361a0a;
+}
+.card{
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+.badge{
+    @apply bg-brown-100 text-brown-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
+.btn{
+    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
